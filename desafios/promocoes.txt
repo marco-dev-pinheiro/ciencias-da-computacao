@@ -1,0 +1,17 @@
+Evidência E
+
+Código promocional repetido
+05
+⚠
+Requisito: códigos promocionais utilizados não podem se repetir.
+Promocoes.java
+1  List<String> codigosUtilizados =
+2    new ArrayList<>();
+3
+4  codigosUtilizados.add("PROMO10");
+5  codigosUtilizados.add("PROMO10");
+
+✓ Caso resolvido · +100 pontos.
+HashSet atende ao requisito de elementos únicos. Como ponto de atenção, não oferece acesso por índice quando a posição é importante.
+
+Set<String> codigosUtilizados = new HashSet<>();

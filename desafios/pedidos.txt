@@ -1,0 +1,22 @@
+Evidência A
+
+Percurso do cardápio
+01
+⚠
+Sintoma: o laço tenta acessar uma posição que não existe.
+Pedidos.java
+1  String[] produtos = {
+2    "Café", "Suco", "Bolo"
+3  };
+4
+5  for (int i = 0; i <= produtos.length; i++) {
+6    System.out.println(produtos[i]);
+7  }
+
+
+✓ Caso resolvido · +60 pontos.
+Índices válidos começam em 0 e terminam em length - 1. Por isso, o percurso deve continuar apenas enquanto i for menor que o comprimento.
+
+for (int i = 0; i < produtos.length; i++) {
+  System.out.println(produtos[i]);
+}

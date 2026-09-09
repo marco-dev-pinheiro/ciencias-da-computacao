@@ -1,0 +1,21 @@
+Evidência C
+
+Localização por código
+03
+⚠
+Sintoma: a posição devolvida pela busca não é uma evidência confiável.
+Cardapio.java
+1  int[] codigos = {
+2    310, 101, 205
+3  };
+4
+5  int posicao =
+6    Arrays.binarySearch(codigos, 205);
+7
+8  System.out.println(posicao);
+
+✓ Caso resolvido · +100 pontos.
+Arrays.binarySearch deve ser usado em um array ordenado. A sequência fica 101, 205, 310 antes da procura.
+
+Arrays.sort(codigos);
+int posicao = Arrays.binarySearch(codigos, 205);

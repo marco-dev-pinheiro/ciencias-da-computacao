@@ -1,0 +1,22 @@
+Evidência D
+
+Cancelamento durante percurso
+04
+⚠
+Sintoma: a modificação direta pode provocar ConcurrentModificationException.
+FilaPedidos.java
+1  for (String pedido : pedidos) {
+2    if (pedido.equals("Café")) {
+3      pedidos.remove(pedido);
+4    }
+5  }
+A remoção precisa ocorrer por uma forma de percurso que controle a alteração.
+
+✓ Caso resolvido · +100 pontos.
+O Iterator permite remover o elemento atual de maneira apropriada. Outra possibilidade apresentada no conteúdo é removeIf.
+
+Iterator<String> iterador = pedidos.iterator();
+while (iterador.hasNext()) {
+  String pedido = iterador.next();
+  if (pedido.equals("Café")) iterador.remove();
+}
