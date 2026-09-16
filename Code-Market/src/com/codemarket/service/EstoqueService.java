@@ -1,7 +1,6 @@
 package com.codemarket.service;
 
-import com.codemarket.model.Produto;
-
+import com.codemarket.objetos.Produto;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;

@@ -1,8 +1,7 @@
 package com.codemarket.ui;
 
-import com.codemarket.model.Produto;
+import com.codemarket.objetos.Produto;
 import com.codemarket.service.EstoqueService;
-
 import java.util.Scanner;
 
 public class Menu {
