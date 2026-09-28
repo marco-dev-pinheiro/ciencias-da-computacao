@@ -77,7 +77,7 @@ public void cadastrarProduto(String nome, double preco, int quantidade) {
 ```
 
 
-## Subideia 3 — Testes, depuração e validação
+##  Testes, depuração e validação
 
 Testar é comparar o resultado esperado com o resultado obtido para verificar se o sistema funciona corretamente.
 
